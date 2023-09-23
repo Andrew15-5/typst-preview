@@ -1,6 +1,6 @@
 import { patchRoot } from "./svg-patch";
 import { installEditorJumpToHandler } from "./svg-debug-info";
-import { RenderSession } from "@myriaddreamin/typst.ts/dist/esm/renderer";
+import type { RenderSession } from "@myriaddreamin/typst.ts/dist/esm/renderer.mjs";
 
 export class SvgDocument {
   /// State fields

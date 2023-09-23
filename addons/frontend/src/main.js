@@ -99,7 +99,7 @@ window.onload = function () {
     })
     .then(() => plugin.createModule())
     .then(async (kModule /* module kernel from wasm */) => {
-      console.log("plugin initialized, build info:", rendererBuildInfo());
+      console.log("plugin initialized, build info:", await rendererBuildInfo());
 
       const hookedElem = document.getElementById("imageContainer");
       const svgDoc = createSvgDocument(hookedElem, kModule);
